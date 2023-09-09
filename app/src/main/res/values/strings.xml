@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Plantify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_head_profile"> Welcome %1$s!</string>
+    <string name="getting_username">Getting username...</string>
+    <string name="register"><u>register</u></string>
+    <string name="click_here_to_reset"><u>click here to reset</u></string>
+    <string name="upload_profile_picture">Upload Profile picture</string>
+    <string name="update_email">Update email</string>
+
+
+
+</resources>

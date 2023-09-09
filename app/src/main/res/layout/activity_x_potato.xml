@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_profile_dp"
+        android:layout_width="361dp"
+        android:layout_height="327dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginBottom="5sp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/potatotwo"
+        app:shapeAppearanceOverlay="@style/roundimageview">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+<TextView
+    android:paddingTop="10dp"
+    android:visibility="gone"
+    android:paddingLeft="25dp"
+    android:id="@+id/confidence_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView_profile_dp"
+    android:text="With high confidence it is : "/>
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/result"
+        android:layout_below="@+id/confidence_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan leaf of the plant to get to know about plant condition"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:paddingBottom="30dp"
+        />
+
+
+
+<!--
+    <ImageView
+        android:padding="8dp"
+        android:id="@+id/image2"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/photo"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/result"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="299dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/result"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@id/image2"
+        android:text="Camera"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:padding="8dp"
+        android:id="@+id/gallery"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/gallery"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/image2"
+
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/button"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/gallery"
+        android:text="Launch Gallery"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+  >-->
+
+ <!--   <TextView
+        android:id="@+id/result22"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#C30000"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        />-->
+
+
+
+    <GridLayout
+        android:id="@+id/gridlayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:layout_below="@id/result"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/photo" />
+                <TextView
+                    android:maxWidth="100sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Lauch camera "
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/gallery" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="100sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="From gallery"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/teacher" />
+                <TextView
+                    android:maxWidth="100sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disease solutions"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</RelativeLayout>

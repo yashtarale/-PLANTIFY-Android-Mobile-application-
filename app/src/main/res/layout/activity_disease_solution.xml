@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updatePassword">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:background="@color/green">
+
+                <TextView
+                    android:id="@+id/textView_change_pwd_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    android:text="Plant disease Solutions"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+
+                    <HorizontalScrollView
+                        android:scrollbars="none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/scard1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_gravity="fill"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:backgroundTint="@color/purple_700"
+                                    app:cardCornerRadius="35dp"
+                                    app:cardElevation="8dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/setimg1"
+                                            android:layout_width="180dp"
+                                            android:layout_height="180dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="2dp"
+                                            android:layout_marginTop="2dp"
+                                            android:layout_marginEnd="2sp"
+                                            android:layout_marginBottom="2sp"
+                                            android:adjustViewBounds="true"
+                                            android:padding="3dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/peach_bg"
+                                            app:shapeAppearanceOverlay="@style/roundimageview2">
+
+                                        </com.google.android.material.imageview.ShapeableImageView>
+
+
+
+                                    </RelativeLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/scard2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toRightOf="@id/scard1"
+                                    android:backgroundTint="@color/lightgrey"
+                                    app:cardCornerRadius="35dp"
+                                    app:cardElevation="8dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/setimg2"
+                                            android:layout_width="150dp"
+                                            android:padding="15dp"
+                                            android:layout_height="150dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="5sp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/leaf"
+                                            app:shapeAppearanceOverlay="@style/roundimageview">
+
+                                        </com.google.android.material.imageview.ShapeableImageView>
+                                    </RelativeLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/scard3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toRightOf="@id/scard2"
+                                    android:backgroundTint="@color/lightgrey"
+                                    app:cardCornerRadius="35dp"
+                                    app:cardElevation="8dp">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/setimg3"
+                                            android:layout_width="150dp"
+                                            android:padding="15dp"
+                                            android:layout_height="150dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="5sp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/leaf"
+                                            app:shapeAppearanceOverlay="@style/roundimageview">
+
+                                        </com.google.android.material.imageview.ShapeableImageView>
+                                      </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/scard4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toRightOf="@id/scard3"
+                                    android:backgroundTint="@color/lightgrey"
+                                    app:cardCornerRadius="35dp"
+                                    app:cardElevation="8dp">
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/setimg4"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            android:padding="15dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="5sp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/leaf"
+                                            app:shapeAppearanceOverlay="@style/roundimageview">
+
+                                        </com.google.android.material.imageview.ShapeableImageView>
+                                     </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/simiar_diseases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="@color/white"
+                    android:text="Similar disease conditions"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                     />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="-60dp"
+                android:background="@drawable/border"
+                android:padding="1dp">
+
+
+
+                   <TextView
+                       android:layout_alignParentTop="true"
+                       android:layout_marginTop="10dp"
+                       android:textSize="20dp"
+                       android:textColor="@color/purple_700"
+                       android:textStyle="bold"
+                       android:layout_centerVertical="true"
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="set text"
+                       android:id="@+id/textviewset"/>
+
+
+
+                <TextView
+                    android:id="@+id/diseaseDescription"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disease Description shown here"
+                    android:layout_below="@+id/textviewset"
+                    android:layout_marginBottom="25dp"
+                    />
+                </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+
+                android:background="@drawable/border"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/textviewSolutionHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:text="Solution and Treatments"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_below="@id/textviewSolutionHeading"
+                    android:id="@+id/textviewSolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:padding="6dp"
+                    android:text="Solution and Treatments Displayed over here"
+                    android:textAlignment="center"
+                     />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How useful did you find this diagnosis?"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/review1"
+                        android:layout_width="55dp"
+                        android:layout_toLeftOf="@id/review2"
+                        android:layout_height="55dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="35dp"
+                        android:src="@drawable/review_a"/>
+
+                    <ImageView
+
+                        android:id="@+id/review2"
+                        android:padding="5dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/review_b"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/review3"
+                        android:layout_toRightOf="@id/review2"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/review_c"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

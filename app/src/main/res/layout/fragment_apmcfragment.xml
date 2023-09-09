@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Apmcfragment">
+
+
+    <!--old layout-->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_profile_dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginBottom="5sp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/profilepicture"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_toRightOf="@+id/imageView_profile_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr.Ujit jain"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/textview1"
+        />
+
+    <TextView
+        android:paddingLeft="10sp"
+        android:layout_below="@id/textview1"
+        android:layout_toRightOf="@+id/imageView_profile_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe yourself to others"
+        android:textSize="15dp"
+        android:id="@+id/textview2"
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_below="@id/textview2"
+        android:layout_toRightOf="@id/imageView_profile_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/button_logout"
+        android:layout_below="@id/textview2"
+        android:layout_toRightOf="@id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/imageView_profile_dp"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        android:layout_margin="8dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grow smart Togeteher"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="100dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+
+                android:text="share app "
+                android:textAlignment="center"
+                android:textColor="@color/darkgreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/plant" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/card1"
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        android:layout_margin="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How is your experience with plntify app?"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:paddingLeft="100dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+
+                android:text="Give Feedback"
+                android:textAlignment="center"
+                android:textColor="@color/darkgreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/star" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_below="@+id/card2"
+        android:layout_gravity="fill"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+                android:text="Fruit disease Detection"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+                android:text="Coming Soon"
+                android:textAlignment="center"
+                android:textColor="@color/darkgreen"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/fruits" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/card3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Community"/>
+
+</RelativeLayout>
+
+</FrameLayout>

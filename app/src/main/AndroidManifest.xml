@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Plantify"
+        tools:targetApi="31">
+        <activity
+            android:name=".x_rose"
+            android:exported="false" />
+        <activity
+            android:name=".x_cotton"
+            android:exported="false" />
+        <activity
+            android:name=".x_corn"
+            android:exported="false" />
+        <activity
+            android:name=".x_strawberry"
+            android:exported="false" />
+        <activity
+            android:name=".x_peach"
+            android:exported="false" />
+        <activity
+            android:name=".x_grapes"
+            android:exported="false" />
+        <activity
+            android:name=".x_cherry"
+            android:exported="false" />
+        <activity
+            android:name=".x_apple"
+            android:exported="false" />
+        <activity
+            android:name=".deleteProile"
+            android:exported="false" />
+        <activity
+            android:name=".updatePassword"
+            android:exported="false" />
+        <activity
+            android:name=".updateEmail"
+            android:exported="false" />
+        <activity
+            android:name=".profilePictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Disease_solution"
+            android:exported="false" />
+        <activity
+            android:name=".Register_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".available_soon"
+            android:exported="false" />
+        <activity
+            android:name=".Croplist_gardenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".x_pepperbell"
+            android:exported="false" />
+        <activity
+            android:name=".x_tomato"
+            android:exported="false" />
+        <activity
+            android:name=".CroplistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".x_potato"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
